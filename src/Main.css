@@ -1,0 +1,28 @@
+.card-container {
+  /* background: linear-gradient(to bottom, #e07ce0, #6eb1a8); */
+  background-image: url('/src/bg-login.jpg');
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  margin-top: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  margin: 0 10px;
+}

@@ -1,0 +1,259 @@
+.login-form {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/src/bg-login.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form h2 {
+  margin-bottom: 1rem;
+}
+
+.login-form .form-group {
+  margin-bottom: 1rem;
+
+}
+
+.login-form label {
+  margin-bottom: 0.5rem;
+}
+
+.login-form input {
+  padding: 0.5rem;
+  width: 16vw;
+  width: 300px;
+  height: 30px
+}
+
+.login-form button {
+  margin-top: 20px;
+  padding: 0.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #00AAE7;
+  width: 355px;
+  height: 40px;
+}
+
+.login-form button:hover {
+  background-color: #676565;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.loginText {
+  margin-left: 13%;
+  color: white;
+  font-size: 24px;
+}
+
+.miracleLogo {
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+.login-fieldset {
+  background-color: #282828;
+  width: 30%;
+  height: 60%;
+  border: none;
+}
+
+.loginform-group {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.text-center {
+  color: #a9a7a7;
+  margin-left: 7vw;
+  font-size: 13px;
+
+}
+
+.ForgotPwd {
+  color: white;
+  margin-left: -48%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+  .loginText {
+    font-size: 16px;
+  }
+
+  .login-form form {
+    width: 85vw
+  }
+
+  .registering {
+    font-size: 14px;
+  }
+
+  .login-form button {
+    width: 80vw
+  }
+
+  .error {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .loginText {
+    font-size: 18px;
+  }
+
+  .login-form form {
+    width: 85vw
+  }
+
+  .login-form button {
+    width: 80vw
+  }
+
+  .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 70vw
+  }
+
+  .loginform-group {
+    width: 70vw
+  }
+
+  .css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 70vw
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 80vw
+  }
+
+  .loginform-group {
+    width: 80vw
+  }
+
+  .css-2ehmn7-MuiInputBase-root-MuiOutlinedInput-root {
+    width: 80vw
+  }
+
+  .login-form button {
+    width: 80vw
+  }
+}
+
+@media screen and (max-width: 1218px) {
+  .loginText {
+    font-size: 20px;
+  }
+}
+
+/* @media screen and (max-width: 350px) {
+  .loginText{
+    font-size: 10px;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .loginText {
+    font-size: 20px;
+  }
+
+  .text-center {
+    margin-top: -10px;
+  }
+}
+
+/* @media screen and (max-width: 2560px) {
+  .loginText{
+    margin-left: 90px;
+  }
+} */
+
+
+
+/* @media screen and (max-width: 425px) {
+  .loginText {
+    font-size: 18px;
+    margin-left: 30px; 
+  }
+  .registering {
+    font-size: 15px;
+  }
+  .login-form button {
+    width: 300px;
+  }
+  .login-form input {
+    width: 300px;
+  }
+  .login-form {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .loginText {
+    font-size: 16px;
+  }
+  .login-form button {
+    width: 270px;
+  }
+  .login-form input {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .loginText {
+    font-size: 14px;
+  }
+  .login-fieldset {
+    width: 25%;
+  }
+  .login-form button {
+    width: 150px;
+  }
+  .loginform-group {
+    width: 250px;
+  }
+  .fields {
+    width: 150px;
+  }
+  .registering {
+    font-size: 12px;
+  }
+ 
+}
+
+@media screen and (max-width: 1024px) {
+  .login-fieldset{
+    width:70vw;
+    height:70vh;
+  }
+  .loginText {
+    font-size: 24px;
+    margin-left: 20vw;
+    margin-bottom: 40px;
+  }
+.textfield{
+  width:30vw;
+}
+} */

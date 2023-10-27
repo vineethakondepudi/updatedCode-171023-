@@ -1,0 +1,86 @@
+/* AdminView.css */
+
+.admin-view-container {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.kpi-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.kpi-button:hover {
+  background-color: #0056b3;
+}
+
+.back-container {
+  width: 80%;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.drop-down-in-sidebar {
+  color: black;
+  font-weight: bold;
+    font-size: 16px;
+    background-color: white;
+    position: fixed;
+    top: 20%;
+    margin-left: 20%;
+}
+@media screen and (max-width: 768px){
+  .drop-down-in-sidebar{
+    margin-left: 2%;
+    width:130px
+  }
+}
+
+@media screen and (min-width: 640px){
+  .drop-down-in-sidebar{
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 641px){
+  .drop-down-in-sidebar{
+    width:100px
+  }
+}
+
+@media screen and (min-width: 520px){
+  .drop-down-in-sidebar{
+    left: 2%;
+  }
+}
+
+@media screen and (max-width: 521px){
+  .drop-down-in-sidebar{
+    width:90px
+  }
+}
+
+@media screen and (max-width: 521px){
+  .drop-down-in-sidebar{
+    width:60px
+  }
+}

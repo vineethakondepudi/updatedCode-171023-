@@ -1,0 +1,184 @@
+.sidebars {
+  width: 270px;
+  height: 100%;
+  background-color: #2e2d2d;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+
+}
+
+.manager-subtabs {
+  margin-Left: 25%;
+
+}
+
+.subtabs-header {
+  margin-top: 30px;
+  font-size: 16px;
+  margin-left: -40px;
+}
+
+.sub-tabss {
+  margin-left: 12%;
+}
+
+/* Tabs */
+.tabss {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  height: 50%
+}
+
+.tabs {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* .tabs:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
+
+.content-containers {
+  display: flex;
+  height: calc(100vh - 64px);
+}
+
+
+
+.page-containers {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gradient-background {
+  background: linear-gradient(to bottom right, #FF8E53 30%, #FE6B8B 90%);
+  padding: 20px;
+}
+
+
+.sub-tabss::-webkit-scrollbar-track {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 13%;
+  justify-content: 'center';
+  max-width: 800px;
+  overflow-x: auto;
+  background: #f1f1f1;
+}
+
+/* .sub-tabss {
+  background: #888;
+} */
+
+
+.sub-tabss::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  display: none;
+}
+
+
+.sub-tabss:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.sub-tabs {
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.sub-tabs:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sub-tabs.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tab-contentss {
+  background-color: white;
+  margin-left: 25%;
+  margin-top: 5%;
+  height: 100%;
+  width: 100%;
+}
+
+.update-button {
+  margin-left: 85%;
+  margin-top: 2%;
+}
+
+.star-icon {
+  color: rgb(244, 207, 197);
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.managerupdatebutton {
+  margin-left: 90%;
+  margin-top: 20px
+}
+
+.managertable {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 1.5%;
+  height: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .manager-subtabs {
+    margin-left: 30vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .manager-subtabs {
+    margin-left: 50vw;
+  }
+
+  .managertable {
+    margin-left: 200px;
+    width: 200px
+  }
+  .managerupdatebutton {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .manager-subtabs {
+    margin-left: 60vw;
+  }
+
+  .managertable {
+    margin-left: 150px;
+  }
+
+  .sidebar {
+    width: 35vh
+  }
+
+
+}
+
+
+/* styles added 17/10/23 */
+.no-data-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  color: red;
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  }

@@ -1,0 +1,304 @@
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #2d2d32;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+padding-top: 50px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+  }
+  
+  .loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #0D416B;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
+
+.sub-tabs-section {
+  width: 150px;
+  background-color: #3f3c3c;
+  color: #fff;
+  padding: 20px;
+}
+
+.sub-tabs {
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 50%
+}
+
+.tab {
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tab:hover {
+  background-color: #0a0a0a1a;
+}
+
+.content-container {
+  display: flex;
+  height: calc(100vh - 64px);
+ 
+}
+
+.tab.active {
+  background-color: rgba(90, 89, 89, 0.295);
+}
+
+.page-container {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+
+.sub-tabs {
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 3vw;
+}
+
+.sub-tabs {
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sub-tab:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sub-tab.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tab-content {
+  background-color: white;
+  margin-left: 25%;
+  margin-top: 5%;
+  height: 400px;
+  width: 1050px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+
+.full-page-container {
+  height: 100vh;
+  background-color: rgb(221, 235, 235);
+}
+
+.navBar-style {
+  background-color: #00AAE7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px
+}
+
+
+.navBar-style .MuiButton-root {
+  color: white;
+  background-color: #3f3c3c;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.username{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 0.5rem;
+  margin: 0;
+}
+
+.subtabs-adjust{
+  margin-left: 45%;
+   margin-top: 2%;
+   display: flex;
+    flex-direction: column;
+}
+.images{
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+.employeeupdatebutton {
+  text-align: right;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 2560px){
+  .employeetable{
+    margin-left: 15vw;
+   }
+
+}
+@media screen and (max-width: 1440px){
+
+.employeetable{
+  margin-left: 17vw;
+ }
+
+}
+
+@media screen and (max-width: 1024px){
+ 
+  .tab{
+    font-size: 16px;
+  }
+  .subtabs-adjust{
+    margin-left: 30vw;
+    font-size: 16px;
+  }
+  .tablecell-style{
+    width: 15% 
+  }
+  .tablecell-style2{
+    width: 10% 
+  }
+  .tablecell-style1{
+    width: 10% 
+  }
+  .tablecell-style3{
+    width: 20% 
+  }
+  .sidebar{
+    width:20vw
+}
+
+.employeetable{
+  margin-left: 20vw;
+ }
+}
+@media screen and (max-width: 768px){
+  .subtabs-adjust{
+    margin-left: 20vw;
+    font-size: 14px;
+  }
+ .employeetable{
+  margin-left: 20vw;
+  
+ }
+ .tablecell-style3{
+  width: 10% 
+}
+.employeeupdatebutton{
+  text-align: left;
+ }
+}
+@media screen and (max-width: 320px){
+  .username {
+    font-size: 18px;
+  }
+  .images{
+    width: 40px;
+    border-radius: 50%;
+  }
+  .employeetable{
+    margin-left: -150px;
+    font-size: 14px;
+   }
+
+}
+@media screen and (max-width: 425px){
+  .sidebar{
+    width:35vw
+  }
+  .subtabs-adjust{
+    margin-left: 35vw;
+    font-size: 12px;
+  }
+  .employeetable{
+    margin-left: 35vw;
+    font-size: 14px;
+   }
+   .tablecell-style1{
+    width: 7% 
+  }
+  .tablecell-style{
+    width: 7% 
+  }
+  .employeeupdatebutton{
+   text-align: left;
+  }
+}
+
+
+
+/* add styles 17/10/23 */
+
+.no-data-message {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  color: red;
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  }
+
+
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #0D416B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+  

@@ -1,0 +1,198 @@
+.button-center-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+
+}
+.manager-NavBar{
+  background-color: #00aaee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+height: 80px
+}
+
+
+.kpi-form {
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
+  /* margin-Left: 20px; */
+  width: 13vw;
+  height: 7vh;
+  font-size: 16px;
+}
+.managerbutton-center-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.view-details {
+  padding: 15px 30px;
+  color: white;
+  background-color: #1dbb99;
+  border-radius: 5px;
+  margin-Left: 20px;
+  width: 13vw;
+  height: 7vh;
+  font-size: 16px;
+}
+
+.navigation-header{
+  background-color: #0d4167;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+/* height: 60px */
+}
+
+.navigation-header.MuiButton-root {
+  color: white;
+  background-color: #3f3c3c;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.manager-username {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 0.5rem;
+  margin: 0;
+}
+
+.gobackbutton {
+  font-size: 18px;
+  padding: 2px;
+  font-family: sans-serif
+}
+.gradient-button{
+  height: 55px;
+   width: 230px;
+}
+.images{
+  width: 60px;
+  border-radius: 50%;
+}
+.logout{
+  font-size: 14px;
+}
+.logout-icon{
+  font-size: 24px; 
+  padding: 2px;
+}
+.logout-button{
+  width: 8vw; 
+  color: White; 
+}
+.main-Heading{
+  font-size: 30px;
+}
+.sub-Heading{
+  font-size: 20px;
+}
+.Paragraph-division{
+  margin-top: 40vh;
+}
+
+@media screen and (max-width: 320px) {
+
+  .gobackbutton {
+    font-size: 14px;
+    padding: 5px;
+    
+  }
+  .kpi-form {
+    height: 80px;
+  }
+
+  .view-details {
+    height: 80px;
+    font-size: 12px;
+  }
+  .images{
+    width: 40px;
+    border-radius: 50%;
+  }
+  .logout-icon{
+    font-size: 14px; 
+  }
+  .logout{
+   font-size: 10px;
+  }
+  .logout-button{
+    width:45vw
+  }
+  .main-Heading{
+    font-size: 16px;
+  }
+  .sub-Heading{
+    font-size: 14px;
+  }
+  .Paragraph-division{
+    margin-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .kpi-form{
+    font-size: 10px;
+    height: 80px;
+  }
+  .view-details{
+    height: 80px;
+  }
+  .manager-username{
+    font-size: 20px;
+  }
+  .logout{
+    font-size: 12px;
+   }
+   .logout-icon{
+    font-size: 14px; 
+  }
+  .logout-button{
+    width:30vw
+  }
+  .main-Heading{
+    font-size: 18px;
+  }
+  .sub-Heading{
+    font-size: 16px;
+  }
+  .Paragraph-division{
+    margin-top: 30vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logout-button{
+    width:30vw
+  }
+  .paragraphs p{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logout-button{
+    width:30vw
+  }
+  .images{
+    width: 70px;
+    border-radius: 50%;
+  }
+ 
+}

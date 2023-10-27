@@ -1,0 +1,188 @@
+.full-height-container {
+  height: 98vh;
+  display: flex;
+  background-color: #e9ecef;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.manager-sidenav {
+  width: 13%;
+  margin-top: 40px;
+  background-color: #272626;
+  padding: 20px;
+}
+
+.sidenav-item {
+  color: white;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 20px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  margin-top: 8%;
+}
+
+.sub-items {
+  color: white;
+  cursor: pointer;
+
+}
+
+.sidenav-item:hover,
+.sub-items li:hover {
+  background-color: #292828;
+  cursor: pointer;
+}
+
+.sub-items li {
+  margin-top: 25px;
+  margin: 5px 0;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.sidenav-icon {
+  margin-right: 10px;
+}
+
+
+
+.table-container {
+  width: 100%;
+  padding: 0px;
+  overflow-x: auto;
+ 
+}
+
+.metric-table {
+  width: 60vw;
+  border-collapse: collapse;
+  margin-top: 8%;
+  margin-left: 20%;
+
+  align-items: end;
+}
+
+.metric-table th,
+.metric-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.metric-table th {
+  background-color: white;
+
+  font-weight: bold;
+
+}
+
+.metric-table td {
+  background-color: white;
+
+}
+
+.mcomments-buttons {
+  text-align: right;
+  margin-right: 15vw;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.update-button {
+  margin: 0;
+}
+
+
+.collapsible-section .expanded .red-item {
+  font-weight: bold;
+}
+
+.no-data-messages {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+@media (max-width: 768px) {
+  .table-container {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+
+  .employee-sidenav {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .table-container {
+    margin-top: 40px;
+    margin-left: 100px;
+    position: fixed;
+
+  }
+
+  .employee-sidenav {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 80px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .employee-sidenav {
+    margin-top: 20px;
+    padding-left: 5px;
+  }
+
+  .table-container {
+    margin-left: 70px;
+    margin-top: 60px;
+  }
+
+  .metric-table {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .employee-sidenav {
+    font-size: 16px;
+  }
+
+  .metric-table {
+    font-size: 16px;
+  }
+}
+
+.button-container {
+  display: flex;
+  align-items: stretch; /* Align buttons vertically */
+}
+
+.button-container > * {
+  flex: 1; /* Share available space equally between buttons */
+  max-width: 180px; /* Define a maximum width for the buttons */
+  margin-right: 10px; /* Add some space between buttons */
+}
+
+/* Override individual button styles if necessary */
+.button-container .MuiButton-root {
+  height: 50px; /* Set the height for the buttons */
+}

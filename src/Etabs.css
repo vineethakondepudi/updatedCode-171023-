@@ -1,0 +1,143 @@
+/* Example CSS (modify as needed) */
+.main-tabs-container {
+  background-color: #3b3c3b;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.sub-tabs-container {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Example CSS (modify as needed) */
+
+.navigationbuttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.navigation-button {
+  background-color: #0d416b;
+color: white;
+border-radius: 5px;
+}
+.navigation-button:hover {
+  background-color: #336186;
+  color: white;
+}
+
+.submit-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 70%;
+}
+
+.disabled-button {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+.getSaveButton {
+  background-color: #1dbb99;
+  height: 50px;
+  width: 100px;
+}
+
+.getClearButton {
+  background-color: #1dbb99;
+  height: 50px;
+  width: 100px;
+}
+
+.gobackeform {
+  font-size: 24px;
+  padding: 2px;
+  font-weight: bold;
+ 
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.username-style {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 0.5rem;
+  margin: 0;
+}
+.buttonwrapper{
+  margin-right: 40px;
+}
+
+
+
+@media screen and (max-width:768px) {
+  .gobackeform {
+    font-size: 14px;
+  }
+
+  .username-style {
+    font-size: 16px;
+  }
+  .navigation-previousbutton {
+    margin-right: 60px;
+  }
+  .navigation-nextbutton {
+    margin-left: -40px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navigationbuttons {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 1px;
+    margin-top: 20px;
+  }
+
+  .getSaveButton,
+  .getClearButton,
+  .navigation-previousbutton,
+  .navigation-nextbutton {
+    flex: 1; 
+    max-width: calc(25% - 10px); 
+  }
+}
+
+@media (max-width: 320px) {
+  .navigationbuttons {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    gap: 1px;
+    margin-top: 20px;
+  }
+
+  .getSaveButton,
+  .getClearButton,
+  .navigation-previousbutton,
+  .navigation-nextbutton {
+    flex: 1; 
+    max-width: calc(50% - 15px); 
+  }
+
+
+}

@@ -1,0 +1,32 @@
+.director-Navbar {
+  background-color: #0d4166;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px
+}
+
+
+
+
+
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.userName-Style {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.welcome-text {
+  font-size: 0.5rem;
+  margin: 0;
+}
+
+
+

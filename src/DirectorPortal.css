@@ -1,0 +1,34 @@
+.background{
+    background-color: #e9ecef;
+    /* height:90vh; */
+    
+}
+.director-portal-navbar {
+    background-color: #0d4166;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px
+  }
+
+@media screen and (max-width: 1024px){
+    .manager-details-button button{
+        font-size: 8px;
+        line-height: 1.50;
+    }
+    
+.employee-details-button button{
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 768px){
+    .manager-details-button button{
+        font-size: 8px;
+        /* line-height: 1.50; */
+    }
+    
+.employee-details-button button{
+    font-size: 12px;
+}
+}
+

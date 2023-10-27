@@ -1,0 +1,56 @@
+.admin-login{
+  height: 100vh;
+  width:100%;
+  background-image: url('/src/bg-login.jpg');
+  background-color: #676565;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
+}
+.adminlogin-form{
+  /* background-image: url('C:\Users\vkottapalli\Pictures\Saved Pictures\adminimage2.jpg'); */
+  background-color: #282828;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  border: none;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.adminText {
+  margin-left: 13%;
+  color: white;
+  font-size: 24px;
+}
+
+.miracleLogo {
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+
+
+.footer-stmt{
+  color:#a9a7a7;
+ text-align: center;
+  font-size: 14px;
+  
+}
+@media screen and (max-width: 375px){
+  .adminText{
+font-size: 18px;
+  }
+}
+/* @media screen and (min-width: 393px){
+  .adminText{
+font-size: 18px;
+  }
+} */

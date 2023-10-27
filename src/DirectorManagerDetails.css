@@ -1,0 +1,103 @@
+.page-container {
+    height: 100vh;
+    display: flex;
+}
+
+.Dmanager-sidenav {
+    display: block;
+    width: 250px;
+    height: 100%;
+    background-color: #2d2d32;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    overflow-y: auto;
+    margin-top: 60px;
+
+}
+
+.dmanager-table-container {
+    width: 80%;
+    padding: 0px;
+    overflow-x: auto;
+    margin-left: 25vw;
+    margin-top: 20vh;
+
+}
+
+.dmanager-metric-table {
+    width: 80%;
+    border-collapse: collapse;
+
+}
+
+.dmanager-metric-table th,
+.dmanager-metric-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+}
+
+.collapsible-section .expanded .red-item {
+    font-weight: bold;
+}
+
+.no-data-messages {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.Dmanager-button{
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 10vw;
+}
+.nav-toggle-icon {
+    display: none; 
+  }
+  .hidden {
+    display: none;
+  }
+
+@media screen and (max-width: 1024px){
+    .dmanager-metric-table{
+        margin-right: 50px;
+    }
+    .Dmanager-sidenav{
+        width:20vw
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Dmanager-sidenav {
+      display: none;
+      width: 20vw;
+    }
+  }
+@media (min-width: 768px) {
+    .Dmanager-sidenav {
+      display: block;
+    }
+  }
+@media screen and (max-width: 425px){
+    .Dmanager-sidenav{
+        width:24vw;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Dmanager-sidenav {
+      display: none !important;
+    }
+    .nav-toggle-icon {
+      display: block;
+    }
+  }

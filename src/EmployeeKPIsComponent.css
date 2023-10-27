@@ -1,0 +1,65 @@
+/* Main container for the component */
+.Container {
+    padding: 20px;
+  }
+  
+  /* AppBar (Header) styling */
+  .AppBar {
+    background-color: #00AAE7; /* Light blue background color */
+    border-bottom: 1px solid #ccc; /* Light border at the bottom */
+  }
+  
+  /* Tabs styling */
+  .Tabs {
+    background-color: #0d4168; /* Light grey background color */
+    border-bottom: 1px solid #ccc; /* Light border at the bottom */
+  }
+  
+  /* Selected (active) tab styling */
+  .Tab.Mui-selected {
+    /* background-color: white;  */
+    color: black /* White text color for the active tab */
+  }
+  
+  /* Tab label styling */
+  .Tab.MuiTab-root {
+    color: #333; /* Dark grey text color for inactive tabs */
+    font-weight: bold;
+    text-transform: none; /* Don't transform text (e.g., uppercase) */
+  }
+  
+  /* Tab content styling */
+  .TabContent {
+    background-color: #f9f9f9; /* Very light grey background color for tab content */
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Sub-tabs styling */
+  .SubTabs {
+    background-color: #f0f0f0; /* Light grey background color for sub-tabs */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  /* Sub-tab label styling */
+  .SubTabLabel {
+    color: #333; /* Dark grey text color for sub-tab labels */
+    font-weight: bold;
+  }
+  
+  /* Question list styling */
+  .QuestionList {
+    list-style-type: square; /* Use square bullet points for questions */
+    margin-left: 20px;
+    color: #444; /* Slightly darker grey text color for questions */
+  }
+  
+  /* Project name styling */
+  .ProjectName {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #222; /* Dark text color for project names */
+  }
+  

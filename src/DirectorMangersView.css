@@ -1,0 +1,57 @@
+.employee-manager-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  
+  }
+/* .mdetails-button{
+    height:10%;
+    width:15%;
+    background-color:#0d416b;
+    font-weight:bolder;
+    font-size:14px;
+}
+
+.edetails-button{
+    height:10%;
+    width:15%;
+    background-color:#1dbb99;
+    font-weight:bolder;
+    font-size:14px;
+} */
+@media screen and (max-width: 1024px){
+    .mdetails-button{
+        height: 70px;
+        width:20vw
+    }
+    .edetails-button{
+        height: 70px;
+        width:20vw
+    }
+}
+@media screen and (max-width: 768px){
+    .mdetails-button{
+        height: 100px;
+        width:20vw;
+       
+    }
+    .edetails-button{
+        height: 100px;
+        width:20vw;
+       
+    }
+}
+@media screen and (max-width: 425px){
+    .mdetails-button{
+        height: 100px;
+        width:30vw;
+       
+    }
+    .edetails-button{
+        height: 100px;
+        width:30vw;
+       
+    }
+}

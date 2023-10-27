@@ -1,0 +1,28 @@
+.fillFormButton {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%) !important;
+    color: white;
+    margin-right: 8px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-left: 5%;
+ 
+  }
+
+    
+  .viewDetailsButton {
+    background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%) !important;
+    color: white;
+  }
+
+  .align {
+   
+    margin-left: 40%;
+    margin-bottom: 30%;
+    padding-top: 25%;
+ 
+  }
+  .mainalign{
+    height:100vh;
+    background: linear-gradient(to bottom, #dbb1db, #80c7e4);
+
+  }

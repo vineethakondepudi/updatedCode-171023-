@@ -1,0 +1,46 @@
+/* Example CSS (modify as needed) */
+.main-tabs-container {
+  background-color: #3b3c3b;
+  padding: 10px;
+  margin-top: 20px;
+}
+  
+  .sub-tabs-containers {
+   
+    padding: 25px;
+    margin-top: 10px; /* Add some spacing between main tabs and sub-tabs */
+  }
+  /* Example CSS (modify as needed) */
+
+  .navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .navigation-button {
+    background-color: #d3e0bc;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .navigation-button:hover {
+    background-color: #c0d8a0;
+  }
+  .submit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 70%;
+}
+
+.css-1ujnqem-MuiTabs-root .MuiTabs-scrollButtons {
+  display: revert;
+}
+
