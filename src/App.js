@@ -89,7 +89,7 @@ function App() {
           <Route path="/eUpdate/:empid" element={<Eupdate />} />
        
 
-          {/* Manager Paths */}
+          {/* Manager Paths */} 
           <Route path="/mview" element={<Mview />} />
           <Route path="/mform" element={<Mform />} />
           <Route path="/mget/:empId" element={<Mget />} />
