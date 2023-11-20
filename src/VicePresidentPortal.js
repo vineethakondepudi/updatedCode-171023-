@@ -35,7 +35,7 @@ const VicePresidentView = () => {
     const [registrations, setRegistrations] = useState([]);
     const [showChangePassword, setShowChangePassword] = useState(false);
     const [showImagePreview, setShowImagePreview] = useState(false);
-    const [Empmail, setEmpmail] = useState(atob(localStorage.getItem('empMail')));
+    const [Empmail, setEmpmail] = useState(atob(localStorage.getItem('empmail')));
     const [selectedImage, setSelectedImage] = useState(null);
 
 

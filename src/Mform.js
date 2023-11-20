@@ -51,6 +51,8 @@ const [incompleteFields, setIncompleteFields] = useState([]);
 
  
     const [isConfirmationDialogOpen, setConfirmationDialogOpen] = useState(false);
+    const [isSuccessDialogOpen, setSuccessDialogOpen] = useState(false);
+
 
     const openConfirmationDialog = () => {
         setConfirmationDialogOpen(true);
@@ -60,6 +62,10 @@ const [incompleteFields, setIncompleteFields] = useState([]);
         setConfirmationDialogOpen(false);
     };
 
+    const openSuccessDialog = () => {
+        setSuccessDialogOpen(true);
+    };
+    
 
     const selectedTabData = subTabsData[tabLabels[selectedTab]];
     console.log('selectedTab:', selectedTab);
@@ -668,26 +674,7 @@ const [incompleteFields, setIncompleteFields] = useState([]);
                     </Table>
                 </TableContainer>
                 <div className="navigationbuttons">
-                    {/* <Dialog open={openDialog} onClose={handleClose}>
-                        <DialogContent style={{ width: '420px' }}>
-                          
-                            <img
-                                src="https://badge-exam.miraclesoft.com/assets/ecert/Completed-test.svg"
-                                alt="not found"
-                                style={{ maxWidth: '100%', maxHeight: '200px', marginLeft: '23%' }}
-                            />
-                            <DialogContentText style={{ fontSize: '18px', marginLeft: '10%', fontWeight: 'bold', color: 'black' }}>
-                                You saved the Data.
-                            </DialogContentText>
-                        </DialogContent>
-                        <DialogActions>
-                            <Button onClick={handleClose} color="primary" style={{ color: 'Black', backgroundColor: '#d8d6d6', fontWeight: 'bolder' }}>
-                                OK
-                            </Button>
-                        </DialogActions>
-                    </Dialog> */}
-
-                    <Dialog
+                                     <Dialog
                         open={isSaveDialogOpen}
                         onClose={() => setSaveDialogOpen(false)} // Close the dialog when needed
                     >
@@ -826,7 +813,7 @@ const [incompleteFields, setIncompleteFields] = useState([]);
                     )}&nbsp;&nbsp;&nbsp;
 
 
-                    <Dialog open={openDialog} onClose={handleClose}>
+                    <Dialog open={isSuccessDialogOpen} onClose={handleClose}>
                         <DialogContent style={{ width: '420px' }}>
                             {/* Include the <img> element for your image here */}
                             <img
@@ -867,6 +854,8 @@ const [incompleteFields, setIncompleteFields] = useState([]);
                             <Button onClick={() => {
                                 handleSubmit();
                                 exportToExcel();
+                                closeConfirmationDialog()
+                                openSuccessDialog();
                             }} color="primary">
                                 OK
                             </Button>

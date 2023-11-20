@@ -93,23 +93,13 @@ function ManagerUpdateEmpData() {
 
 
 
-    // Use useEffect to validate incomplete items when moving to the next title section
-    const [incompleteItems, setIncompleteItems] = useState([]);
-    const [incompleteItemsDialogOpen, setIncompleteItemsDialogOpen] = useState(false);
+  
 
 
 
     const handleSectionClick = async (index) => {
         // Validate incomplete items when moving to the next title section
-        const incompleteItems = getIncompleteItems(index);
-        setIncompleteItems(incompleteItems);
-
-        if (incompleteItems.length > 0) {
-            // Display an error message with the names of incomplete items
-            setIncompleteItemsDialogOpen(true);
-            return; // Prevent moving to the next section
-        }
-
+       
 
         setSelectedSectionIndex(index); // Set the selected section index
         const selectedSection = sections[index];
@@ -526,21 +516,6 @@ function ManagerUpdateEmpData() {
                                             </TableRow>
                                         ))}
                                     </TableBody>
-                                    
-
-
-                                    <Dialog open={incompleteItemsDialogOpen} onClose={() => setIncompleteItemsDialogOpen(false)}>
-                                        <DialogContent>
-                                            <DialogContentText>
-                                                Please fill in Manager Rating and Manager Comments for the following items: {incompleteItems.join(', ')}
-                                            </DialogContentText>
-                                        </DialogContent>
-                                        <DialogActions>
-                                            <Button onClick={() => setIncompleteItemsDialogOpen(false)} color="primary">
-                                                OK
-                                            </Button>
-                                        </DialogActions>
-                                    </Dialog>
 
                                 </Table>
                             </TableContainer>
@@ -568,7 +543,7 @@ function ManagerUpdateEmpData() {
         <DialogTitle>Confirm Decline</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Are you sure you want to decline?
+            Are you sure you want to Decline?
           </DialogContentText>
         </DialogContent>
         <DialogActions>

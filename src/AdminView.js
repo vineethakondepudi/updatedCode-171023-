@@ -19,7 +19,7 @@ const AdminView = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    window.location.href = '/main';
+    window.location.href = '/';
   };
 
   const username = localStorage.getItem('adminName');
@@ -59,7 +59,7 @@ const AdminView = () => {
 
           <div className="userInfo">
             <Typography variant="h6" className="welcome-text">
-              Welcome
+              WELCOME
             </Typography>
 
             <h3 className="username-style">{username.toUpperCase()}</h3>

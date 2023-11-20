@@ -291,7 +291,7 @@ const MainTabs = () => {
             value={tabValue}
             onChange={handleChange}
             centered
-            style={{ minWidth: '1550px'  }}
+            style={{ minWidth: '1050px'  }}
           >
             {tabNames.map((tabName, index) => (
               <Tab key={index} label={tabName} className="Tab" style={{ color: 'White', }} />

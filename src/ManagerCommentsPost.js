@@ -443,7 +443,7 @@ const handleSectionClick = async (index) => {
         <DialogTitle>Confirm Decline</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Are you sure you want to decline?
+            Are you sure you want to Decline?
           </DialogContentText>
         </DialogContent>
         <DialogActions>

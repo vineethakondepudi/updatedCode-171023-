@@ -51,6 +51,8 @@ const [incompleteFields, setIncompleteFields] = useState([]);
 
  
     const [isConfirmationDialogOpen, setConfirmationDialogOpen] = useState(false);
+    const [isSuccessDialogOpen, setSuccessDialogOpen] = useState(false);
+
 
     const openConfirmationDialog = () => {
         setConfirmationDialogOpen(true);
@@ -58,6 +60,10 @@ const [incompleteFields, setIncompleteFields] = useState([]);
 
     const closeConfirmationDialog = () => {
         setConfirmationDialogOpen(false);
+    };
+
+    const openSuccessDialog = () => {
+        setSuccessDialogOpen(true);
     };
 
 
@@ -826,7 +832,7 @@ const [incompleteFields, setIncompleteFields] = useState([]);
                     )}&nbsp;&nbsp;&nbsp;
 
 
-                    <Dialog open={openDialog} onClose={handleClose}>
+                    <Dialog open={isSuccessDialogOpen} onClose={handleClose}>
                         <DialogContent style={{ width: '420px' }}>
                             {/* Include the <img> element for your image here */}
                             <img
@@ -867,6 +873,8 @@ const [incompleteFields, setIncompleteFields] = useState([]);
                             <Button onClick={() => {
                                 handleSubmit();
                                 exportToExcel();
+                                closeConfirmationDialog();
+                                openSuccessDialog();
                             }} color="primary">
                                 OK
                             </Button>

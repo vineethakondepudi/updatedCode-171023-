@@ -606,8 +606,8 @@ function ManagerUpdateEmpData() {
                                             <TableCell>Quantity Achieved</TableCell>
                                             <TableCell>Index KPI</TableCell>
                                             <TableCell>Comments</TableCell>
-                                            <TableCell>Vice_President-Rating</TableCell>
-                                            <TableCell>Vice_President-Comments</TableCell>
+                                            <TableCell>Vice President-Rating</TableCell>
+                                            <TableCell>Vice President-Comments</TableCell>
                                         </TableRow>
                                     </TableHead>
                                     <TableBody>

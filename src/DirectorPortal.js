@@ -337,8 +337,8 @@ const DirectorViewMangerDetails = () => {
       <TableHead style={{ backgroundColor: 'voilet' }}>
         <TableRow>
           <TableCell style={{ fontWeight: 'bold', fontSize: '16px', color: '#222', paddingLeft: "5%" }}>Employee ID</TableCell>
-          <TableCell style={{ fontWeight: 'bold', fontSize: '16px', color: '#333', paddingLeft: "12%" }}>Employee Name</TableCell>
-          <TableCell style={{ fontWeight: 'bold', fontSize: '16px', color: '#333', paddingLeft: "25%" }}>Action</TableCell>
+          <TableCell style={{ fontWeight: 'bold', fontSize: '16px', color: '#333', paddingLeft: "15%" }}>Employee Name</TableCell>
+          <TableCell style={{ fontWeight: 'bold', fontSize: '16px', color: '#333', paddingLeft: "33%" }}>Action</TableCell>
         </TableRow>
       </TableHead>
       <TableBody style={{ marginLeft: '40%' }}>
@@ -357,7 +357,7 @@ const DirectorViewMangerDetails = () => {
   if (employees.Empid === employee.Empid) {
     return (
     
-        <TableCell key={employee.EmployeeID} style={{ fontSize: '16px', color: '#333', paddingLeft: '12%',  }}>
+        <TableCell key={employee.EmployeeID}style={{ fontSize: '16px', color: '#333', paddingLeft: '15%' }}>
           {employees.Empname}
         </TableCell>
       
@@ -366,7 +366,7 @@ const DirectorViewMangerDetails = () => {
 })}
               <TableCell style={{ color: '#333' }}>
               {employee.Status === 'Decline' && (
-    <span style={{paddingLeft: '30%', fontSize:'20px', color:'red'}}><b>Declined</b></span>
+    <span style={{paddingLeft: '45%',marginRight: '68px', fontSize:'20px', color:'red'}}><b>Declined</b></span>
   )}
    {employee.Status !== 'Decline' && (
              
@@ -374,7 +374,7 @@ const DirectorViewMangerDetails = () => {
                     className="manager-details-button"
                     variant="contained"
                     onClick={() => handleManagerViewDetailsClick(employee.Empid)}
-                    style={{ backgroundColor: '#0d416b', marginLeft: '260px', fontWeight: 'bolder', width: '20%'}}
+                    style={{ backgroundColor: '#0d416b', marginLeft: '400px', fontWeight: 'bolder', width: '20%'}}
                   >
                     Manager KPI's Details
                   </Button>

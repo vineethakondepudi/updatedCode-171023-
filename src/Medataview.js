@@ -32,19 +32,9 @@ const ManagerPortal = () => {
   const [showImagePreview, setShowImagePreview] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
+ 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
-  };
-  const handleChangePassword = () => {
-    setShowChangePassword(true);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
   };
 
   const handleCloseUserMenu = () => {

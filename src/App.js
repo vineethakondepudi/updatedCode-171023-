@@ -56,7 +56,8 @@ import VicePresidentView from './VicePresidentView';
 import VicePresidentPortal from './VicePresidentPortal';
 import VicePresidentComments from './VicePresidentComments';
 import VpDirectorComments from './VpDirectorComments';
-import DirectorKPIsComponent from './DirectorKPIsComponent'
+import DirectorKPIsComponent from './DirectorKPIsComponent';
+import ResetPasswordDialog from './ResetPasswordDialog';
 
 
 function App() {
@@ -71,6 +72,8 @@ function App() {
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegistrationForm />} />
           <Route path="/resetpwd" element={<PasswordResetForm />} />
+          <Route path='/resetPasswordDialog' element={<ResetPasswordDialog/>}/>
+
 
            {/* Admin paths */}
            <Route path="/adminLogin" element={<AdminloginForm />} />

@@ -506,7 +506,7 @@ const Sidebar = () => {
                         ) :
                             (activeSubTab && tabsData.length > 0 ? ( // Check if data is available
                                 <>
-                                    <TableContainer component={Paper} style={{ height: '45vh', overflow: "auto" }}>
+                                    <TableContainer component={Paper} style={{ height: '35vh', overflow: "auto" }}>
                                         <Table style={{ overflow: "scroll", }}>
                                             <TableHead>
                                                 <TableRow>
@@ -522,58 +522,9 @@ const Sidebar = () => {
                                                     <TableRow key={index}>
                                                         <TableCell style={{ fontSize: "100%", fontFamily: "sans-serif" }}>{item.Metric}</TableCell>
                                                         <TableCell>{item.QuantityTarget}</TableCell>
-                                                        <TableCell>
-                                                            <FormControl style={{ width: '60%' }}>
-                                                                {/* <InputLabel>Quantity Achieved</InputLabel> */}
-                                                                <Select
-                                                                    value={item.QuantityAchieved}
-                                                                    onChange={(e) => {
-                                                                        handleQuantityAchievedChange(index, e.target.value);
-                                                                        handleFieldChange();
-                                                                    }}
-                                                                >
-                                                                     {Array.from({ length: 11 }, (_, i) => i).map((number) => (
-                                                            <MenuItem key={number} value={number}>
-                                                                {number}
-                                                            </MenuItem>
-                                                        ))}
-                                                                </Select>
-                                                            </FormControl>
-                                                        </TableCell>
-
-                                                        <TableCell>
-                                                            <Tooltip title={item.Comments} classes={{ tooltip: 'custom-tooltip' }} style={{ width: '100%' }}>
-                                                                <TextField
-                                                                    id="outlined-multiline-static"
-                                                                    multiline
-                                                                    rows={2}
-                                                                    value={item.Comments}
-                                                                    onChange={(e) => {
-                                                                        handleCommentsChange(index, e.target.value);
-                                                                        handleFieldChange();
-                                                                    }}
-
-                                                                />
-                                                            </Tooltip>
-                                                        </TableCell>
-                                                        <TableCell>
-                                                            <FormControl style={{ width: '100%' }}>
-                                                                {/* <InputLabel>Index KPI</InputLabel> */}
-                                                                <Select
-                                                                    value={item.IndexKpi}
-                                                                    onChange={(e) => {
-                                                                        handleIndexKpiChange(index, e.target.value);
-                                                                        handleFieldChange();
-                                                                    }}
-                                                                >
-                                                                   {Array.from({ length: 11 }, (_, i) => i).map((number) => (
-                                                            <MenuItem key={number} value={number}>
-                                                                {number}
-                                                            </MenuItem>
-                                                        ))}
-                                                                </Select>
-                                                            </FormControl>
-                                                        </TableCell>
+                                                        <TableCell> {item.QuantityAchieved} </TableCell>
+                                                        <TableCell> {item.Comments} </TableCell>
+                                                        <TableCell> {item.IndexKpi} </TableCell>
 
                                                     </TableRow>
                                                 ))}

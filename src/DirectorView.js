@@ -35,7 +35,7 @@ const Dview = () => {
   const [registrations, setRegistrations] = useState([]);
   const [showChangePassword, setShowChangePassword] = useState(false);
   const [showImagePreview, setShowImagePreview] = useState(false);
-  const [Empmail, setEmpmail] = useState(atob(localStorage.getItem('empMail')));
+  const [Empmail, setEmpmail] = useState(atob(localStorage.getItem('empmail')));
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleFillFormClick = async () => {
@@ -350,7 +350,7 @@ const Dview = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      {showChangePassword && (
+      {showChangePassword ?  (
         <IconButton
           aria-label="close"
           onClick={toggleChangePassword}
@@ -358,12 +358,8 @@ const Dview = () => {
         >
           <CloseIcon style={{ color: 'red', width: '10%', height: '40%' }} />
         </IconButton>
-      )}
-      {showChangePassword ? (
-
-        <ChangePassword />
-
-      ) : (
+      )
+     : (
         <div style={{ display: 'flex' }}>
           <div style={{
             flex: '70%',
@@ -394,7 +390,7 @@ const Dview = () => {
     className="gradient-button"
     variant="contained"
     onClick={handleFillFormClick}
-    style={{ backgroundColor: '#0d416b', marginRight: '20px', flex: 1, width:'40%' }}
+    style={{ backgroundColor: '#0d416b', marginRight: '40px', flex: 1, width:'40%' }}
   >
     <b>Fill KPI Form</b>
   </Button>
@@ -410,7 +406,7 @@ const Dview = () => {
 <div style={{ marginBottom: '20px' }}></div>
 <div>
   <Button
-    style={{ backgroundColor: '#0d416b', marginRight: '20px', flex: 1, width:'40%' }}
+    style={{ backgroundColor: '#0d416b', marginRight: '40px', flex: 1, width:'40%' }}
     className="view-details"
     variant="contained"
     onClick={handleFormUpdateDetailsClick}
@@ -419,9 +415,10 @@ const Dview = () => {
     Update Details
   </Button>
   <Button
+    style={{ backgroundColor: '#1dbb99', marginRight: '20px', flex: 1, width:'40%' }}
+    className="view-details"
     variant="contained"
     onClick={handleFormViewDetailsClick}
-    style={{ backgroundColor: '#1dbb99', flex: 1, width:'40%'  }}
   >
     Manager Details
   </Button>

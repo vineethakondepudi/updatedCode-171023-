@@ -34,7 +34,7 @@ const ButtonCenter = () => {
   const [registrations, setRegistrations] = useState([]);
   const [showChangePassword, setShowChangePassword] = useState(false);
   const [showImagePreview, setShowImagePreview] = useState(false);
-  const [Empmail, setEmpmail] = useState(atob(localStorage.getItem('empMail')));
+  const [Empmail, setEmpmail] = useState(atob(localStorage.getItem('empmail')));
   const [selectedImage, setSelectedImage] = useState(null);
 
   const [isHovering, setIsHovering] = useState(false);
@@ -318,6 +318,7 @@ const ButtonCenter = () => {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
+              style={{ width: '200px', maxWidth: '300px' }}
             >
 
               <MenuItem key="Profile" onClick={handleOpenProfileCard}>
